@@ -91,6 +91,19 @@ module.exports = (sequelize, Sequelize) => {
                 }
             }
         },
+
+        promoCode:{
+            allowNull: false,
+            type: Sequelize.STRING,
+            unique:true,
+            validate:{
+                len:{
+                    args: [3,140],
+                    msg: "Promo Code is not valid, it should be min length 3 and max 140"
+                }
+            }
+
+        },
         createdAt: {
             allowNull: false,
             type: Sequelize.DATE

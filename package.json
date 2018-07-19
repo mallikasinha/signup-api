@@ -21,6 +21,7 @@
     "underscore": "^1.9.1",
     "uuid": "latest",
     "uuid-validate": "0.0.3",
+    "validate-password": "^1.0.4",
     "validator": "latest"
   }
 }

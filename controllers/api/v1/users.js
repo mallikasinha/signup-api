@@ -18,10 +18,14 @@ router.post('/signup', async(req, res, next) =>{
     let sex = req.body.sex || '' ;
     let role = req.body.role || '' ;
 
+
+
     let retVal = await userHelper.createUserInDatabase(req.body);
 
-    //let retVal = await email + '' +password + '' + name+ '' + sex + '' + role
-    genUtil.sendJsonResponse(res, 200, 'posted', retVal.args );
+    if (retVal.status === false)
+        genUtil.sendJsonResponse(res, 400, retVal.message, null);
+    else
+    genUtil.sendJsonResponse(res, 200, retVal, retVal.args );
 
 
 });
