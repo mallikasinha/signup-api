@@ -1,6 +1,7 @@
 'use strict';
 const validator = require('validator');
 
+
 module.exports = (sequelize, Sequelize) => {
     const User = sequelize.define('User', {
         id: {
@@ -93,16 +94,14 @@ module.exports = (sequelize, Sequelize) => {
         },
 
         promoCode:{
-            allowNull: false,
             type: Sequelize.STRING,
-            unique:true,
-            validate:{
-                len:{
-                    args: [3,140],
-                    msg: "Promo Code is not valid, it should be min length 3 and max 140"
-                }
-            }
 
+        },
+
+        referralCode:{
+            type: Sequelize.STRING,
+            unique: true,
+            allowNull: false,
         },
         createdAt: {
             allowNull: false,

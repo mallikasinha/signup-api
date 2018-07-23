@@ -39,6 +39,15 @@ module.exports = {
             sex: {
                 type: Sequelize.ENUM('male', 'female', 'other')
             },
+            promoCode: {
+                allowNull: false,
+                type: Sequelize.STRING,
+            },
+            referralCode:{
+                type: Sequelize.STRING,
+                unique: true,
+                allowNull: false,
+            },
             createdAt: {
                 allowNull: false,
                 type: Sequelize.DATE

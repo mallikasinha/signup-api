@@ -17,15 +17,15 @@ router.post('/signup', async(req, res, next) =>{
     let name = req.body.name  || '';
     let sex = req.body.sex || '' ;
     let role = req.body.role || '' ;
-
-
+    let promoCode = req.body.promoCode || '';
+    let referalCode = req.body.referralCode || '';
 
     let retVal = await userHelper.createUserInDatabase(req.body);
 
     if (retVal.status === false)
         genUtil.sendJsonResponse(res, 400, retVal.message, null);
     else
-    genUtil.sendJsonResponse(res, 200, retVal, retVal.args );
+    genUtil.sendJsonResponse(res, 200, retVal.message, retVal.args ) || genUtil.sendJsonResponse(res, 200, retVal, retVal.args ) ;
 
 
 });
