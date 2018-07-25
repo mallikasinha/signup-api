@@ -1,5 +1,5 @@
 let startUrls = {
-    "Sadcasm": "https://www.facebook.com/Sadcasm/photos/a.458106047914642.1073741828.458104154581498/949180015473907/?type=3&theater"
+    "Sadcasm": "https://www.facebook.com/Sadcasm/photos/a.458106047914642.1073741828.458104154581498/918639761861266/?type=3&theater"
    // "Laugh": "https//www.facebook.com/laughingcolours/photos/a.10150471189319578.388832.173770089577/10157632423039578/?type=3&theater"
 };
 
