@@ -1,6 +1,6 @@
 let startUrls = {
-    "Sadcasm": "https://www.facebook.com/Sadcasm/photos/a.458106047914642.1073741828.458104154581498/918639761861266/?type=3&theater"
-   // "Laugh": "https//www.facebook.com/laughingcolours/photos/a.10150471189319578.388832.173770089577/10157632423039578/?type=3&theater"
+    // "Sadcasm": "https://www.facebook.com/Sadcasm/photos/a.458106047914642.1073741828.458104154581498/918639761861266/?type=3&theater"
+   "Laugh": "https//www.facebook.com/laughingcolours/photos/a.10150471189319578.388832.173770089577/10157632423039578/?type=3&theater"
 };
 
 let images=[];
@@ -42,6 +42,7 @@ setInterval(function(){
   once it displays  a msg - reached image threshold,   then type JSON.stringify(images) 
   then click on copy  and paste the content in sadcasm.js in new line.
   copy the url of sadcasm and replace it by previous url.
+  Restart the browser
   
 
  * */
